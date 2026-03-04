@@ -610,6 +610,52 @@
   </div>
 </section>
 
+<section id="layout-1772637877524" class="layout-section hero-section" data-zappy-component="true" style="width: 100vw; margin-left: calc(-50vw + 50%); min-height: 500px; position: relative; display: flex; align-items: center; justify-content: center; direction: rtl; overflow: hidden; box-sizing: border-box;" data-component-id="hero-fullwidth-bg">
+  <!-- CSS override for hero background images and content elements - ensures correct styling -->
+  <style>
+    .hero-bg-container img.hero-background-image,
+    .hero-bg-container img[data-hero-background="true"] {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      display: block !important;
+      max-width: none !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+    }
+    /* Ensure interactive elements in hero section are clickable */
+    #layout-1772637877524 button,
+    #layout-1772637877524 a,
+    #layout-1772637877524 .btn,
+    #layout-1772637877524 [class*="btn"],
+    #layout-1772637877524 [data-element-type="button"],
+    #layout-1772637877524 h1,
+    #layout-1772637877524 h2,
+    #layout-1772637877524 h3,
+    #layout-1772637877524 h4,
+    #layout-1772637877524 p {
+      pointer-events: auto !important;
+      position: relative;
+    }
+  </style>
+  <!-- Background Image Container - full bleed -->
+  <div class="hero-bg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+    <img data-placeholder="hero-bg-1772637877524" data-context="Hero background image for כותרת שלך כאן" data-zappy-editable-image="true" data-element-type="image" data-hero-background="true" src="/assets/business-general-hero-upload-1772637899434.webp" alt="Hero background" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block" class="layout-placeholder-image zappy-editable-image hero-background-image" data-element-id="img-1772637878339-ojwmalc22" data-resize-handler-attached="true" data-zappy-zoom="1">
+  </div>
+  
+  <!-- Dark Overlay for text readability (pointer-events: none allows clicking through to image) -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 2; pointer-events: none;"></div>
+  
+  <!-- Content (pointer-events: none on container, auto on interactive elements via CSS above) -->
+  <div class="container" style="position: relative; z-index: 3; max-width: 1200px; width: 100%; margin: 0 auto; padding: 80px 1.5rem; text-align: center; pointer-events: none; box-sizing: border-box;">
+    <h1 style="font-size: 48px; font-weight: 700; color: #FFFFFF; margin-bottom: 20px; font-family: Fraunces, Libre Baskerville, Georgia, serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3); pointer-events: auto;">כותרת שלך כאן</h1>
+    <h3 style="font-size: 24px; font-weight: 400; color: #FFFFFF; opacity: 0.9; max-width: 700px; margin: 0 auto; font-family: Fraunces, Libre Baskerville, Georgia, serif; text-shadow: 0 1px 2px rgba(0,0,0,0.3); pointer-events: auto;">כותרת משנה שלך כאן</h3>
+  </div>
+</section>
+
+
+
 <section class="index-cta-section" data-layout-spec="בית-cta">
   <div class="index-cta-container">
     <div class="index-cta-content">
