@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+סדנאות חווייתיות ייחודיות המשלבות חשיבה אסטרטגית ומשחקים מתוחכמים. פיתוח מנהיגות, חדשנות ועבודת צוות דרך למידה מבוססת משחק לארגונים.
+
+### סדנאות
+https://example.com/workshops
+משחקים קבוצתיים לפיתוח צוותים המלמדים שיתוף פעולה, חשיבה אסטרטגית וקבלת החלטות. סדנאות מותאמות אישית לאנשי ביטחון, צוותי הוראה ואנשי עסקים.
+
+### שיטה
+https://example.com/method
+גלו את שיטת הלמידה הייחודית שנולדה מבניית סוס הנדנדה הגדול בעולם. משחק מתוחכם שמלמד ערכים ארגוניים דרך חשיבה יצירתית ופתרון חידות מורכבות.
+
+### צור קשר
+https://example.com/contact
+מוכנים לחולל שינוי אמיתי בארגון? צרו קשר עכשיו לתיאום סדנה מותאמת אישית. נשמח ללוות אתכם במסע של למידה, צמיחה וחדשנות ארגונית.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
