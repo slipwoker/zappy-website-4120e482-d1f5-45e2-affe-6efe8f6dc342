@@ -6287,6 +6287,282 @@ nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #D9A1AE) !importa
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (צור קשר-contact)
+   Added: 2026-03-05T05:43:44.348Z
+   ═══════════════════════════════════════════════════════════ */
+.contact-contact-section {
+  background: #F7F3ED;
+  padding: 120px 16px 80px;
+  position: relative;
+  overflow: visible;
+  color: var(--text-dark);
+}
+
+.contact-contact-section .contact-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-contact-section .contact-header-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-contact-section .contact-main-title {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: 0;
+}
+
+.contact-contact-section .contact-intro-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-contact-section .contact-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  direction: rtl;
+}
+
+.contact-contact-section .contact-form-column {
+  background: #FFFFFF;
+  border: 1px solid #D9D2CA;
+  border-radius: 0;
+  padding: 40px;
+}
+
+.contact-contact-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-contact-section .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-contact-section .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.contact-contact-section .form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  text-align: right;
+}
+
+.contact-contact-section .form-group input,
+.contact-contact-section .form-group textarea {
+  font-family: 'Inter', 'Source Sans 3', system-ui, sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border: 1px solid #D9D2CA;
+  border-radius: 0;
+  background: #FFFFFF;
+  color: var(--text-dark);
+  transition: border-color 0.2s ease;
+  text-align: right;
+  direction: rtl;
+}
+
+.contact-contact-section .form-group input:focus,
+.contact-contact-section .form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.contact-contact-section .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-contact-section .submit-btn {
+  background: var(--accent);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 0;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.contact-contact-section .submit-btn:hover {
+  background: #C56A63;
+  box-shadow: 0 10px 24px rgba(224, 122, 115, 0.25);
+}
+
+.contact-contact-section .contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-contact-section .info-card {
+  background: #FFFFFF;
+  border: 1px solid #D9D2CA;
+  border-radius: 0;
+  padding: 36px 32px;
+}
+
+.contact-contact-section .info-title {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin-bottom: 18px;
+}
+
+.contact-contact-section .info-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 28px;
+}
+
+.contact-contact-section .contact-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-contact-section .contact-link:hover {
+  color: var(--accent);
+}
+
+.contact-contact-section .contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-contact-section .method-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #F7F3ED;
+  border: 1px solid #D9D2CA;
+  border-radius: 0;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  direction: rtl;
+}
+
+.contact-contact-section .method-item:hover {
+  background: #EDE8E1;
+  border-color: var(--primary);
+  transform: translateX(-4px);
+}
+
+.contact-contact-section .method-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.contact-contact-section .method-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-contact-section .quick-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.contact-contact-section .quick-info-item {
+  background: #FFFFFF;
+  border: 1px solid #D9D2CA;
+  border-radius: 0;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.contact-contact-section .info-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.contact-contact-section .info-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .contact-contact-section {
+    padding: 100px 16px 60px;
+  }
+
+  .contact-contact-section .contact-header-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .contact-contact-section .contact-main-title {
+    font-size: 26px;
+  }
+
+  .contact-contact-section .contact-content-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-contact-section .contact-form-column {
+    padding: 28px 20px;
+  }
+
+  .contact-contact-section .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-contact-section .info-card {
+    padding: 28px 20px;
+  }
+
+  .contact-contact-section .info-title {
+    font-size: 20px;
+  }
+
+  .contact-contact-section .submit-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
