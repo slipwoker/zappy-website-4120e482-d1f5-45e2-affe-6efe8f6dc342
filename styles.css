@@ -6821,6 +6821,301 @@ nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #D9A1AE) !importa
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (צור קשר-contact)
+   Added: 2026-03-05T08:21:53.030Z
+   ═══════════════════════════════════════════════════════════ */
+.contact-contact-section {
+  background-color: #F7F3ED;
+  color: #2F3236;
+  padding: 120px 16px 80px;
+  position: relative;
+  overflow: visible;
+}
+
+.contact-contact-section .contact-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-contact-section .contact-hero-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #D9D2CA;
+  padding: 48px 40px;
+  margin-bottom: 60px;
+}
+
+.contact-contact-section .contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.contact-contact-section h2 {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #2F3236;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-contact-section .contact-hero-content p {
+  color: #2F3236;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.contact-contact-section .contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-contact-section .contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-contact-section .contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-contact-section .contact-form-field-full {
+  grid-column: span 2;
+}
+
+.contact-contact-section .contact-form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2F3236;
+  text-align: right;
+}
+
+.contact-contact-section .contact-form-field input,
+.contact-contact-section .contact-form-field textarea {
+  padding: 12px 16px;
+  border: 1px solid #D9D2CA;
+  background: #FAFAF7;
+  font-family: 'Inter', 'Source Sans 3', system-ui, sans-serif;
+  font-size: 14px;
+  color: #2F3236;
+  text-align: right;
+  direction: rtl;
+  transition: border-color 0.2s ease;
+}
+
+.contact-contact-section .contact-form-field input:focus,
+.contact-contact-section .contact-form-field textarea:focus {
+  outline: none;
+  border-color: #2CB8B2;
+}
+
+.contact-contact-section .contact-form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-contact-section .contact-submit-btn {
+  background: #E07D5C;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(224, 125, 92, 0.2);
+}
+
+.contact-contact-section .contact-submit-btn:hover {
+  background: #D9A1AE;
+  box-shadow: 0 6px 20px rgba(224, 125, 92, 0.3);
+  transform: translateY(-2px);
+}
+
+.contact-contact-section .contact-divider {
+  height: 1px;
+  background: linear-gradient(to left, transparent, #D9D2CA 20%, #D9D2CA 80%, transparent);
+  margin: 60px 0;
+}
+
+.contact-contact-section .contact-info-section {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.contact-contact-section h3 {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #2F3236;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-contact-section .contact-info-section p {
+  color: #2F3236;
+  line-height: 1.75;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-contact-section .contact-info-section a {
+  color: #2CB8B2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-contact-section .contact-info-section a:hover {
+  color: #E07D5C;
+}
+
+.contact-contact-section .contact-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.contact-contact-section .contact-method-card {
+  background: transparent;
+  border: 1px solid #D9D2CA;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-contact-section .contact-method-card:hover {
+  border-color: #2CB8B2;
+  box-shadow: 0 8px 24px rgba(44, 184, 178, 0.12);
+  transform: translateY(-4px);
+}
+
+.contact-contact-section .contact-method-icon {
+  width: 56px;
+  height: 56px;
+  background: #F7F3ED;
+  border: 1px solid #D9D2CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2CB8B2;
+  transition: all 0.3s ease;
+}
+
+.contact-contact-section .contact-method-card:hover .contact-method-icon {
+  background: #2CB8B2;
+  color: #FFFFFF;
+  border-color: #2CB8B2;
+}
+
+.contact-contact-section .contact-method-content {
+  text-align: center;
+}
+
+.contact-contact-section .contact-method-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2F3236;
+  margin-bottom: 8px;
+}
+
+.contact-contact-section .contact-method-content a {
+  color: #2F3236;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.contact-contact-section .contact-method-card:hover .contact-method-content a {
+  color: #2CB8B2;
+}
+
+.contact-contact-section .contact-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-contact-section .contact-detail-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(217, 210, 202, 0.9);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.contact-contact-section .contact-detail-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5C5C66;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-contact-section .contact-detail-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2F3236;
+}
+
+@media (max-width: 768px) {
+  .contact-contact-section {
+    padding: 100px 16px 60px;
+  }
+
+  .contact-contact-section .contact-hero-wrapper {
+    padding: 32px 20px;
+    margin-bottom: 40px;
+  }
+
+  .contact-contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-contact-section h3 {
+    font-size: 20px;
+  }
+
+  .contact-contact-section .contact-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .contact-contact-section .contact-form-field-full {
+    grid-column: span 1;
+  }
+
+  .contact-contact-section .contact-methods-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .contact-contact-section .contact-details-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .contact-contact-section .contact-divider {
+    margin: 40px 0;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
