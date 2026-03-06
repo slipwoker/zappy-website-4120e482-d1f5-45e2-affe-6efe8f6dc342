@@ -242,6 +242,180 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.the-idea-gallery-section {
+  position: relative;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  padding: 80px 16px;
+  overflow: visible;
+}
+
+.the-idea-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.the-idea-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.the-idea-gallery-header h2 {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.the-idea-gallery-header p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.the-idea-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  gap: 16px;
+  direction: rtl;
+}
+
+.the-idea-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: #FFFFFF;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.the-idea-gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(45, 35, 28, 0.16);
+  z-index: 10;
+}
+
+.the-idea-gallery-item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.the-idea-gallery-item-medium {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.the-idea-gallery-item-wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-panoramic {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.the-idea-gallery-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.the-idea-gallery-item:hover .the-idea-gallery-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.the-idea-gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(27, 27, 31, 0.85) 0%, rgba(27, 27, 31, 0.4) 60%, transparent 100%);
+  padding: 24px 20px 20px;
+  transform: translateY(100%);
+  transition: transform 400ms ease;
+  pointer-events: none;
+}
+
+.the-idea-gallery-item:hover .the-idea-gallery-overlay {
+  transform: translateY(0);
+}
+
+.the-idea-gallery-caption {
+  font-family: 'Inter', 'Source Sans 3', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-light);
+  display: block;
+  text-align: right;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .the-idea-gallery-section {
+    padding: 60px 16px;
+  }
+
+  .the-idea-gallery-header {
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  .the-idea-gallery-header h2 {
+    font-size: 28px;
+  }
+
+  .the-idea-gallery-grid {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 300px;
+    gap: 12px;
+  }
+
+  .the-idea-gallery-item-large,
+  .the-idea-gallery-item-medium,
+  .the-idea-gallery-item-tall,
+  .the-idea-gallery-item-wide,
+  .the-idea-gallery-item-small,
+  .the-idea-gallery-item-panoramic {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .the-idea-gallery-overlay {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(27, 27, 31, 0.75) 0%, rgba(27, 27, 31, 0.3) 70%, transparent 100%);
+    padding: 16px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -300,16 +474,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display:none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -344,7 +518,7 @@
       </div>
   </div>
   <div class="method-story-divider-wrapper">
-    <svg aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,28 Q30,32 60,26 T120,30 Q150,25 180,31 T240,27 Q270,32 300,26 T360,30 Q390,27 420,31 T480,28 Q510,32 540,27 T600,30 Q630,26 660,32 T720,28 Q750,31 780,27 T840,30 Q870,26 900,31 T960,28 Q990,32 1020,27 T1080,30 Q1110,26 1140,31 T1200,28 L1200,60 Z" fill="#F7F3ED"></path>
     </svg>
   </div>
@@ -357,7 +531,7 @@
       
       <div class="method-philosophy-pillars zappy-vertical-grid"><div class="method-philosophy-pillar" data-grid-item-index="0">
           <div class="method-philosophy-pillar-header">
-            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <rect x="6" y="6" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" rx="1"></rect>
               <line x1="6" y1="16" x2="26" y2="16" stroke="currentColor" stroke-width="1.5"></line>
               <line x1="16" y1="6" x2="16" y2="26" stroke="currentColor" stroke-width="1.5"></line>
@@ -367,7 +541,7 @@
           <p style=""><font color="#ffffff">כשמגדירים כללים ברורים ומגבלות מדויקות, הקבוצה מפסיקה לנדוד ומתחילה לחשוב אסטרטגית. המשחק מלמד שמסגרת טובה לא מגבילה – היא משחררת יצירתיות.</font></p>
         </div><div class="method-philosophy-pillar" data-grid-item-index="1">
           <div class="method-philosophy-pillar-header">
-            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 8 L22 16 L16 24 L10 16 Z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
               <circle cx="16" cy="16" r="2" fill="currentColor"></circle>
             </svg>
@@ -376,7 +550,7 @@
           <p style=""><font color="#ffffff">בכל נקודת בחירה במשחק, הצוות מגלה מה באמת חשוב לו: מהירות או דיוק? סיכון או ביטחון? בשיחה שאחרי המשחק אנחנו מחזירים את התובנות האלה לעולם העבודה.</font></p>
         </div><div class="method-philosophy-pillar" data-grid-item-index="2">
           <div class="method-philosophy-pillar-header">
-            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
               <circle cx="20" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
               <line x1="15" y1="14" x2="17" y2="18" stroke="currentColor" stroke-width="1.5"></line>
@@ -386,7 +560,7 @@
           <p>שיתוף פעולה אמיתי לא קורה מעצמו – הוא דורש תקשורת, תיאום ותפקידים ברורים. המשחקים שלנו בנויים כך שהצלחה תלויה בכל חבר בקבוצה, ולא רק במוביל.</p>
         </div><div class="method-philosophy-pillar" data-grid-item-index="3">
           <div class="method-philosophy-pillar-header">
-            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" class="method-philosophy-pillar-icon" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 24 Q16 8 24 24" fill="none" stroke="currentColor" stroke-width="1.5"></path>
               <circle cx="16" cy="12" r="1.5" fill="currentColor"></circle>
             </svg>
@@ -400,68 +574,90 @@
     </div></div>
   
   <div class="method-philosophy-divider-wrapper">
-    <svg aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewbox="0 0 1200 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="method-philosophy-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:#EDE8E1;stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:#D9D2CA;stop-opacity:1"></stop>
         </linearGradient>
       </defs>
-      <path d="M0,80 L0,0 L1200,80 Z" fill="#EDE8E1"></path>
-      <path d="M0,0 L1200,80" stroke="#2CB8B2" stroke-width="1" fill="#EDE8E1" opacity="0.4"></path>
+      <path d="M0,80 L0,0 L1200,80 Z" fill="var(--bg-light)"></path>
+      <path d="M0,0 L1200,80" stroke="#2CB8B2" stroke-width="1" fill="var(--bg-light)" opacity="0.4"></path>
     </svg>
   </div>
 </section>
 
-<section class="method-gallery-section" data-layout-spec="שיטה-gallery" id="zappy-section-2">
-  <div class="method-gallery-container">
-    <div class="method-gallery-header">
+<section class="the-idea-gallery-section" data-layout-spec="שיטה-gallery" data-zappy-section="true">
+  <div class="the-idea-gallery-container">
+    <div class="the-idea-gallery-header">
       <h2>אווירת סדנה שמעודדת חשיבה</h2>
       <p>המרחב שלנו מעוצב לעודד מיקוד, שיתוף פעולה ומשחקיות מתחשבת. כל פריט, כל פינה ממוקמים בקפידה כדי ליצור חוויה שבה למידה זורמת באופן טבעי, והצוות שלכם מרגיש בנוח לחשוב אחרת.</p>
     </div>
 
-    <div class="method-gallery-grid zappy-preserve-css-grid" id="zappy-auto-grid-1772684758370-2rnb68" data-zappy-auto-grid="true" data-original-item-width="590" data-original-gap="20px" style="grid-template-columns: 285px 285px 285px 285px;">
-      <div class="method-gallery-item method-gallery-item-large method-gallery-item-1 zappy-grid-item-media-only" data-grid-item-index="0" data-zappy-original-height="700" style="height: 700px !important; overflow: hidden !important;">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758294-5d7vt30g2" data-element-type="image" data-zappy-zoom-wrapper-width="588px" data-zappy-zoom-wrapper-height="698px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 588px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 698px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-1" data-context="Close-up of adult hands carefully arranging colorful wooden puzzle pieces or modular game components on a clean white table in natural daylight, showing focus and strategic thinking in a sophisticated corporate workshop setting for סוס ועגלה organizational training" width="600" height="700" src="/assets/business-general-service-upload-1772685568940.webp" alt="ידיים מסדרות רכיבי משחק אסטרטגי בסדנה" data-element-type="image" data-element-id="img-1772684758294-5d7vt30g2" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -2.5% !important; top: -10.5841% !important; width: 105% !important; height: 121.168% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.05" data-zappy-original-width="588" data-zappy-original-height="698"></div>
+    <div class="the-idea-gallery-grid">
+      <div class="the-idea-gallery-item the-idea-gallery-item-large">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="ידיים מסדרות רכיבי משחק אסטרטגי בסדנה" src="/assets/business-general-service-upload-1772685568940.webp" data-placeholder="method-gallery-image-1" data-context="Close-up of adult hands carefully arranging colorful wooden puzzle pieces or modular game components on a clean white table in natural daylight, showing focus and strategic thinking in a sophisticated corporate workshop setting for סוס ועגלה organizational training" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">אסטרטגיה בפעולה</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-2 zappy-grid-item-media-only" data-grid-item-index="1" data-zappy-original-height="340" style="height: 340px !important; overflow: hidden !important;">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758294-vrvrpdt7g" data-element-type="image" data-zappy-zoom-wrapper-width="588px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 588px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-2" data-context="Group of professional adults gathered around a conference table with game materials spread out, engaged in collaborative problem-solving during a סוס ועגלה organizational workshop, natural office lighting, refined composition" width="400" height="340" src="/assets/business-general-service-upload-1772685674301.webp" alt="קבוצה סביב שולחן בסדנת שיתוף פעולה" data-element-type="image" data-element-id="img-1772684758294-vrvrpdt7g" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: 0% !important; top: -15.2367% !important; width: 100% !important; height: 130.473% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-original-width="588" data-zappy-original-height="338"></div>
+      <div class="the-idea-gallery-item the-idea-gallery-item-medium">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="קבוצה סביב שולחן בסדנת שיתוף פעולה" src="/assets/business-general-service-upload-1772685674301.webp" data-placeholder="method-gallery-image-2" data-context="Group of professional adults gathered around a conference table with game materials spread out, engaged in collaborative problem-solving during a סוס ועגלה organizational workshop, natural office lighting, refined composition" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">שיתוף פעולה</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-3 zappy-grid-item-media-only" data-grid-item-index="2" data-zappy-original-height="340" style="height: 340px !important; overflow: hidden !important;">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758294-odfbfviu8" data-element-type="image" data-zappy-zoom-wrapper-width="283px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 283px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-3" data-context="Whiteboard with strategic notes, diagrams, and colorful markers showing team brainstorming and planning process in a סוס ועגלה workshop, clean professional setting with natural light" width="400" height="340" src="/assets/business-general-service-upload-1772685759825.webp" alt="לוח אסטרטגיה עם תוכנית ורעיונות" data-element-type="image" data-element-id="img-1772684758294-odfbfviu8" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -2.5% !important; top: -10.2152% !important; width: 105% !important; height: 120.43% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.05" data-zappy-original-width="283" data-zappy-original-height="338"></div>
+      <div class="the-idea-gallery-item the-idea-gallery-item-medium">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="לוח אסטרטגיה עם תוכנית ורעיונות" src="/assets/business-general-service-upload-1772685759825.webp" data-placeholder="method-gallery-image-3" data-context="Whiteboard with strategic notes, diagrams, and colorful markers showing team brainstorming and planning process in a סוס ועגלה workshop, clean professional setting with natural light" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">תכנון ויזואלי</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-4 zappy-grid-item-media-only" data-grid-item-index="3" data-zappy-original-height="340" style="height: 340px !important; overflow: hidden !important;">
-        <input type="checkbox" id="zappy-lightbox-toggle-img-1772684758294-65tm4ibta" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1772684758294-65tm4ibta" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758294-65tm4ibta" data-element-type="image" data-zappy-zoom-wrapper-width="283px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 283px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important; cursor: pointer;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-click-action="expand"><img data-placeholder="method-gallery-image-4" data-context="Professional facilitator leading a debrief session with attentive adult participants seated in a semi-circle, calm and focused atmosphere in a סוס ועגלה organizational training workshop" width="400" height="340" src="/assets/business-general-service-upload-1772687159393.webp" alt="מנחה מוביל דיון סיכום עם משתתפים" data-element-type="image" data-element-id="img-1772684758294-65tm4ibta" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -10% !important; top: -16.9822% !important; width: 120% !important; height: 133.964% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.2" data-zappy-original-width="283" data-zappy-original-height="338" data-zappy-click-action="expand"></div></label>
+      <div class="the-idea-gallery-item the-idea-gallery-item-tall">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="מנחה מוביל דיון סיכום עם משתתפים" src="/assets/business-general-service-upload-1772687159393.webp" data-placeholder="method-gallery-image-4" data-context="Professional facilitator leading a debrief session with attentive adult participants seated in a semi-circle, calm and focused atmosphere in a סוס ועגלה organizational training workshop" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">הנחיה מקצועית</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-large method-gallery-item-5 zappy-grid-item-media-only" data-grid-item-index="4" style="height: 700px !important; overflow: hidden !important;" data-zappy-original-height="700">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758294-r4zsjzomz" data-element-type="image" data-zappy-zoom-wrapper-width="588px" data-zappy-zoom-wrapper-height="698px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 588px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 698px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-5" data-context="Wide shot of a calm team discussion in a bright, modern training room, adults seated comfortably around tables with workshop materials, natural daylight streaming through windows, refined and thoughtful atmosphere for סוס ועגלה workshops" width="600" height="700" src="/assets/business-general-service-upload-1772687339130.webp" alt="דיון צוותי רגוע בחלל הסדנה" data-element-type="image" data-element-id="img-1772684758294-r4zsjzomz" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -2.5% !important; top: -10.5841% !important; width: 105% !important; height: 121.168% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.05" data-zappy-original-width="588" data-zappy-original-height="698"></div>
+      <div class="the-idea-gallery-item the-idea-gallery-item-wide">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="דיון צוותי רגוע בחלל הסדנה" src="/assets/business-general-service-upload-1772687339130.webp" data-placeholder="method-gallery-image-5" data-context="Wide shot of a calm team discussion in a bright, modern training room, adults seated comfortably around tables with workshop materials, natural daylight streaming through windows, refined and thoughtful atmosphere for סוס ועגלה workshops" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">אווירה תומכת</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-6 zappy-grid-item-media-only" data-grid-item-index="5" style="height: 340px !important; overflow: hidden !important;" data-zappy-original-height="340">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758295-umwyehs3h" data-element-type="image" data-zappy-zoom-wrapper-width="283px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 283px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-6" data-context="Extreme close-up of sophisticated game components, wooden blocks, cards, and modular pieces arranged artistically on a clean surface, showing the refined materials used in סוס ועגלה workshops, natural lighting" width="400" height="340" src="/assets/business-general-service-upload-1772687238915.webp" alt="תקריב של רכיבי משחק מעוצבים" data-element-type="image" data-element-id="img-1772684758295-umwyehs3h" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -20% !important; top: -28.146% !important; width: 140% !important; height: 156.292% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.4" data-zappy-original-width="283" data-zappy-original-height="338"></div>
+      <div class="the-idea-gallery-item the-idea-gallery-item-small">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="תקריב של רכיבי משחק מעוצבים" src="/assets/business-general-service-upload-1772687238915.webp" data-placeholder="method-gallery-image-6" data-context="Extreme close-up of sophisticated game components, wooden blocks, cards, and modular pieces arranged artistically on a clean surface, showing the refined materials used in סוס ועגלה workshops, natural lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">פרטים מתוחכמים</span>
+          </div>
+        </div>
       </div>
 
-      <div class="method-gallery-item method-gallery-item-7 zappy-grid-item-media-only" data-grid-item-index="6" style="height: 340px !important; overflow: hidden !important;" data-zappy-original-height="340">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1772684758295-2nav44lrj" data-element-type="image" data-zappy-zoom-wrapper-width="283px" data-zappy-zoom-wrapper-height="338px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 283px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 338px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="method-gallery-image-7" data-context="Room-wide shot of a סוס ועגלה workshop space showing the full environment: multiple teams working at different stations, natural light, clean modern interior, adults engaged in strategic activities, professional and calm atmosphere" width="400" height="340" src="/assets/business-general-service-upload-1772687279730.webp" alt="מבט רחב על מרחב הסדנה" data-element-type="image" data-element-id="img-1772684758295-2nav44lrj" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: absolute !important; object-position: 50% 50%; margin-top: 0px !important; margin-bottom: 0px !important; left: -2.5% !important; top: -10.2152% !important; width: 105% !important; height: 120.43% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover !important;" data-zappy-zoom="1.05" data-zappy-original-width="283" data-zappy-original-height="338"></div>
+      <div class="the-idea-gallery-item the-idea-gallery-item-panoramic">
+        <div class="the-idea-gallery-image-wrapper">
+          <img alt="מבט רחב על מרחב הסדנה" src="/assets/business-general-service-upload-1772687279730.webp" data-placeholder="method-gallery-image-7" data-context="Room-wide shot of a סוס ועגלה workshop space showing the full environment: multiple teams working at different stations, natural light, clean modern interior, adults engaged in strategic activities, professional and calm atmosphere" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <div class="the-idea-gallery-overlay">
+            <span class="the-idea-gallery-caption">המרחב המלא</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="method-gallery-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="method-gallery-fade" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:#EDE8E1;stop-opacity:1"></stop>
-          <stop offset="70%" style="stop-color:#EDE8E1;stop-opacity:0.5"></stop>
-          <stop offset="100%" style="stop-color:#1B1B1F;stop-opacity:1"></stop>
-        </linearGradient>
-      </defs>
-      <path d="M0,100 L0,0 L1200,0 L1200,100 Z" fill="var(--bg-dark)"></path>
-    </svg>
   </div>
 </section>
 
@@ -487,7 +683,7 @@
     </div>
   </div>
   <div class="method-testimonials-divider-wrapper">
-    <svg aria-hidden="true" viewBox="0 0 1200 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" viewbox="0 0 1200 2" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="method-testimonials-dots-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:var(--border-dark);stop-opacity:1"></stop>

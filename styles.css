@@ -7116,6 +7116,181 @@ nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #D9A1AE) !importa
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (שיטה-gallery)
+   Added: 2026-03-06T14:40:05.538Z
+   ═══════════════════════════════════════════════════════════ */
+.the-idea-gallery-section {
+  position: relative;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  padding: 80px 16px;
+  overflow: visible;
+}
+
+.the-idea-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.the-idea-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.the-idea-gallery-header h2 {
+  font-family: 'Fraunces', 'Libre Baskerville', Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.the-idea-gallery-header p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.the-idea-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  gap: 16px;
+  direction: rtl;
+}
+
+.the-idea-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: #FFFFFF;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.the-idea-gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(45, 35, 28, 0.16);
+  z-index: 10;
+}
+
+.the-idea-gallery-item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.the-idea-gallery-item-medium {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.the-idea-gallery-item-wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-item-panoramic {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.the-idea-gallery-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.the-idea-gallery-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.the-idea-gallery-item:hover .the-idea-gallery-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.the-idea-gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(27, 27, 31, 0.85) 0%, rgba(27, 27, 31, 0.4) 60%, transparent 100%);
+  padding: 24px 20px 20px;
+  transform: translateY(100%);
+  transition: transform 400ms ease;
+  pointer-events: none;
+}
+
+.the-idea-gallery-item:hover .the-idea-gallery-overlay {
+  transform: translateY(0);
+}
+
+.the-idea-gallery-caption {
+  font-family: 'Inter', 'Source Sans 3', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-light);
+  display: block;
+  text-align: right;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .the-idea-gallery-section {
+    padding: 60px 16px;
+  }
+
+  .the-idea-gallery-header {
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  .the-idea-gallery-header h2 {
+    font-size: 28px;
+  }
+
+  .the-idea-gallery-grid {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 300px;
+    gap: 12px;
+  }
+
+  .the-idea-gallery-item-large,
+  .the-idea-gallery-item-medium,
+  .the-idea-gallery-item-tall,
+  .the-idea-gallery-item-wide,
+  .the-idea-gallery-item-small,
+  .the-idea-gallery-item-panoramic {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .the-idea-gallery-overlay {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(27, 27, 31, 0.75) 0%, rgba(27, 27, 31, 0.3) 70%, transparent 100%);
+    padding: 16px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
